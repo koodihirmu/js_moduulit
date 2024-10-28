@@ -3,8 +3,8 @@
 const body = document.querySelector("body")
 
 body.innerHTML = `
-	<h1>Leap Year Machine</h1>
-	<form>
+	<h1>Leap Year Machine (3p)</h1>
+	<form id="form_leap_year">
 		<div>
 			<input type="text" name="year" placeholder="input year...">
 			<input type="submit" name="submit" value="send">
@@ -13,7 +13,7 @@ body.innerHTML = `
 	</form>
 `
 
-const form = document.querySelector("form")
+const form = document.querySelector("form[id=form_leap_year]")
 const year = document.querySelector("input[name=year]")
 const p = document.querySelector("p")
 
