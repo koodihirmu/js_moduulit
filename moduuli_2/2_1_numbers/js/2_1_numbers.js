@@ -1,12 +1,11 @@
 'use strict'
 
-const numbers = []
+let numbers = []
 
 for (let i = 0; i < 5; i++) {
 	numbers.push(prompt("Give a number!"))
 }
 
-for (let i = numbers.length; i > 0; i--) {
-	console.log(i)
+for (let i = numbers.length - 1; i >= 0; i--) {
+	console.log(numbers[i])
 }
-
