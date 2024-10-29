@@ -1,9 +1,9 @@
 'use strict';
 
-const body = document.querySelector("body")
+const container = document.querySelector(".container")
 
-body.innerHTML = `
-	<h1>Leap Year Machine (3p)</h1>
+container.innerHTML = `
+	<h2>Leap Year Machine (3p)</h2>
 	<form id="form_leap_year">
 		<div>
 			<input type="text" name="year" placeholder="input year...">
