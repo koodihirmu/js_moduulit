@@ -118,15 +118,20 @@ picArray.forEach((card) => {
   article.appendChild(title)
   article.appendChild(figure)
   article.appendChild(p)
-
-  // using innerHTML
-  //article.innerHTML = `
-  //     <h2>${card.title}</h2>
-  //     <figure>
-  //        <img src="${card.image.medium}" alt="${card.title}">
-  //        <figcaption>${card.caption}</figcaption>
-  //     </figure>
-  //     <p>${card.description}</p>
-  //`
   target.appendChild(article)
+
+  let dialog = document.querySelector("dialog")
+  article.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    let img = dialog.querySelector("img")
+    img.src = card.image.large
+    img.alt = card.title
+    dialog.showModal()
+  })
+
+  // close the modal with X
+  let span = dialog.querySelector("span")
+  span.addEventListener('click', () => {
+    dialog.close()
+  })
 })
