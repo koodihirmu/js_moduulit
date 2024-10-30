@@ -1,0 +1,615 @@
+[
+  {
+    "score": 0.9090909,
+    "show": {
+      "id": 49041,
+      "url": "https://www.tvmaze.com/shows/49041/fallout",
+      "name": "Fallout",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 59,
+      "premiered": "2024-04-10",
+      "ended": null,
+      "officialSite": "https://www.amazon.com/dp/B0CN4HV16N",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.8
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 3,
+        "name": "Prime Video",
+        "country": null,
+        "officialSite": "https://www.primevideo.com"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 416744,
+        "imdb": "tt12637874"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/508/1271367.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/508/1271367.jpg"
+      },
+      "summary": "<p>Based on one of the greatest video game series of all time, <b>Fallout</b> is the story of haves and have nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, a peaceful denizen from a cozy fallout shelter is forced to return to the surface and is shocked to discover the wasteland waiting for her.</p>",
+      "updated": 1714791735,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/49041"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2792466",
+          "name": "The Beginning"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.56901526,
+    "show": {
+      "id": 26675,
+      "url": "https://www.tvmaze.com/shows/26675/fallout-nuka-break",
+      "name": "Fallout: Nuka Break",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 15,
+      "averageRuntime": 15,
+      "premiered": "2011-08-29",
+      "ended": "2013-10-28",
+      "officialSite": null,
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 43,
+      "network": null,
+      "webChannel": {
+        "id": 21,
+        "name": "YouTube",
+        "country": null,
+        "officialSite": "https://www.youtube.com"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 248588,
+        "imdb": "tt2056910"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/515/1288262.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/515/1288262.jpg"
+      },
+      "summary": "<p>Join Twig (Zack Finfrock), a former Vault 10 Dweller, as he searches the barren wasteland of eastern California for ice-cold Nuka Cola. Along for the ride is Ben (Aaron Giles), a radiation-ravaged ghoul, and Scarlett (Tybee Diskin), a sexy former slave. Together, the three attempt to survive both the harsh wastes and a relentless group of bounty hunters while trying to find the coveted beverage -- Nuka Cola.</p>",
+      "updated": 1713715584,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/26675"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1118803",
+          "name": "Episode 6"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.5429245,
+    "show": {
+      "id": 45186,
+      "url": "https://www.tvmaze.com/shows/45186/operation-buffalo",
+      "name": "Operation Buffalo",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama"
+      ],
+      "status": "Ended",
+      "runtime": 55,
+      "averageRuntime": 55,
+      "premiered": "2020-05-31",
+      "ended": "2020-07-05",
+      "officialSite": "https://iview.abc.net.au/show/operation-buffalo",
+      "schedule": {
+        "time": "20:30",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 6
+      },
+      "weight": 80,
+      "network": {
+        "id": 114,
+        "name": "ABC",
+        "country": {
+          "name": "Australia",
+          "code": "AU",
+          "timezone": "Australia/Sydney"
+        },
+        "officialSite": "https://www.abc.net.au/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 381880,
+        "imdb": "tt11853364"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/256/640636.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/256/640636.jpg"
+      },
+      "summary": "<p><b>Operation Buffalo</b> shines a spotlight on a controversial time in Australia's modern history, the 1950s British nuclear testing in outback South Australia.</p><p>There is no more lethal cocktail than a combination of blind faith and paranoia. And it seems in 1956, everyone was drinking it. It's the height of the Cold War. The Menzies Government has welcomed British atomic bomb testing at remote, ‘uninhabited' Maralinga, in outback South Australia.</p><p>Charged with keeping the base functioning smoothly is Major Leo Carmichael, an Australian Army Engineer and WWII hero. But testing the most dangerous weapon in the world is no easy task for Leo with a Commanding Officer who is not fit for purpose; a new meteorologist, Dr Eva Lloyd-George who starts asking questions; and the Government and press watching his every move. And as it turns out, the land of Maralinga may not be so uninhabited after all, when Leo's faced with the arrival of a family of Indigenous Australians, curious about the giant clouds that explode occasionally…</p><p>This is a story of our infinite capacity for betrayal, and no one is immune, not even the betrayers themselves.</p>",
+      "updated": 1593962472,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/45186"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1876668",
+          "name": "Episode 6"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.34812832,
+    "show": {
+      "id": 36591,
+      "url": "https://www.tvmaze.com/shows/36591/fallet",
+      "name": "Fallet",
+      "type": "Scripted",
+      "language": "Swedish",
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "status": "Ended",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "2017-04-07",
+      "ended": "2017-05-26",
+      "officialSite": "https://www.svtplay.se/fallet",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Friday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 42,
+      "network": {
+        "id": 155,
+        "name": "SVT1",
+        "country": {
+          "name": "Sweden",
+          "code": "SE",
+          "timezone": "Europe/Stockholm"
+        },
+        "officialSite": "https://www.svtplay.se/kanaler/svt1"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 325169,
+        "imdb": "tt6433844"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/157/393516.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/157/393516.jpg"
+      },
+      "summary": "<p><b>Fallet</b> is a spoof on the Nordic-Noir detective genre, which follows Sophie Borg and DCI Tom Brown, two mediocre detectives who pair up to investigate a murder.</p>",
+      "updated": 1724632380,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/36591"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1463117",
+          "name": "Episode 8"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.2902564,
+    "show": {
+      "id": 9898,
+      "url": "https://www.tvmaze.com/shows/9898/ballot-monkeys",
+      "name": "Ballot Monkeys",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Ended",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "2015-04-21",
+      "ended": "2015-05-06",
+      "officialSite": "http://www.channel4.com/programmes/ballot-monkeys",
+      "schedule": {
+        "time": "22:00",
+        "days": [
+          "Tuesday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 40,
+      "network": {
+        "id": 45,
+        "name": "Channel 4",
+        "country": {
+          "name": "United Kingdom",
+          "code": "GB",
+          "timezone": "Europe/London"
+        },
+        "officialSite": "https://www.channel4.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 294669,
+        "imdb": "tt4624644"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/34/85151.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/34/85151.jpg"
+      },
+      "summary": "<p>Political comedy set on the campaign buses of the main parties as they battle their way through the chaos of the election campaign.</p>",
+      "updated": 1573753109,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/9898"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/525909",
+          "name": "Episode 5"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.27858004,
+    "show": {
+      "id": 718,
+      "url": "https://www.tvmaze.com/shows/718/the-tonight-show-starring-jimmy-fallon",
+      "name": "The Tonight Show Starring Jimmy Fallon",
+      "type": "Talk Show",
+      "language": "English",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Running",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2014-02-17",
+      "ended": null,
+      "officialSite": "http://www.nbc.com/the-tonight-show",
+      "schedule": {
+        "time": "23:35",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": 4.4
+      },
+      "weight": 98,
+      "network": {
+        "id": 1,
+        "name": "NBC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.nbc.com/"
+      },
+      "webChannel": {
+        "id": 347,
+        "name": "Peacock",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.peacocktv.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 35853,
+        "thetvdb": 270261,
+        "imdb": "tt3444938"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/534/1335993.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/534/1335993.jpg"
+      },
+      "summary": "<p>Emmy Award and Grammy Award winner Jimmy Fallon brought NBC's \"The Tonight Show\" back to its New York origins when he launched <b>The Tonight Show Starring Jimmy Fallon </b>from Rockefeller Center. Fallon puts his own stamp on the storied NBC late-night franchise with his unique comedic wit, on-point pop culture awareness, welcoming style and impeccable taste in music with the award-winning house band, The Roots.</p>",
+      "updated": 1730212150,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/718"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3034921",
+          "name": "Olivia Rodrigo, Keri Russell, Andrea Bocelli, Lauren Daigle"
+        },
+        "nextepisode": {
+          "href": "https://api.tvmaze.com/episodes/3038485",
+          "name": "Salma Hayek Pinault, David Chang, Kelsea Ballerini"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.2733395,
+    "show": {
+      "id": 5753,
+      "url": "https://www.tvmaze.com/shows/5753/late-night-with-jimmy-fallon",
+      "name": "Late Night with Jimmy Fallon",
+      "type": "Talk Show",
+      "language": "English",
+      "genres": [],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2009-03-02",
+      "ended": "2014-02-07",
+      "officialSite": null,
+      "schedule": {
+        "time": "00:35",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 73,
+      "network": {
+        "id": 1,
+        "name": "NBC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.nbc.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 20843,
+        "thetvdb": 85355,
+        "imdb": "tt1231460"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/22/57388.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/22/57388.jpg"
+      },
+      "summary": "<p><i>Saturday Night Live</i> veteran Jimmy Fallon takes the Late Night reins from Conan O'Brien when O'Brien succeeds Jay Leno as new host of The Tonight Show in 2009.</p>",
+      "updated": 1696626547,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/5753"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/346985",
+          "name": "Andy Samberg, The Muppets, Final Show"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.22098215,
+    "show": {
+      "id": 54516,
+      "url": "https://www.tvmaze.com/shows/54516/doktor-ballouz",
+      "name": "Doktor Ballouz",
+      "type": "Scripted",
+      "language": "German",
+      "genres": [
+        "Drama",
+        "Medical"
+      ],
+      "status": "To Be Determined",
+      "runtime": null,
+      "averageRuntime": 45,
+      "premiered": "2021-04-08",
+      "ended": null,
+      "officialSite": "https://www.zdf.de/serien/doktor-ballouz",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 11,
+      "network": null,
+      "webChannel": {
+        "id": 352,
+        "name": "ZDFmediathek",
+        "country": {
+          "name": "Germany",
+          "code": "DE",
+          "timezone": "Europe/Busingen"
+        },
+        "officialSite": "https://www.zdf.de/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 400070,
+        "imdb": "tt12259596"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/488/1221272.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/488/1221272.jpg"
+      },
+      "summary": "<p>In a small clinic in the Uckermark, the gifted and unusual doctor Amin Ballouz fights for the well-being of his patients and at the same time against his own past. As a young man, he fled his homeland and found a new home in the Uckermark. He has a big heart, always wears a trench coat and drives a Trabi. As a doctor, he practices passionately and does not shy away from unconventional measures. His patients are his family - the hospital is his life. But suddenly he is confronted with the unexpected death of his wife. A short time after the loss, he returned to the clinic. But is he ready for it yet? Those around him try to help him find his way back to life.</p>",
+      "updated": 1704824736,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/54516"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2715915",
+          "name": "Alles Gute"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.15154794,
+    "show": {
+      "id": 72609,
+      "url": "https://www.tvmaze.com/shows/72609/i-brottets-spar-fallet-tove",
+      "name": "I brottets spår Fallet Tove",
+      "type": "Documentary",
+      "language": "Swedish",
+      "genres": [],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 50,
+      "premiered": "2023-11-11",
+      "ended": null,
+      "officialSite": "https://www.svtplay.se/i-brottets-spar-fallet-tove",
+      "schedule": {
+        "time": "02:00",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 9,
+      "network": null,
+      "webChannel": {
+        "id": 190,
+        "name": "SVT Play",
+        "country": {
+          "name": "Sweden",
+          "code": "SE",
+          "timezone": "Europe/Stockholm"
+        },
+        "officialSite": "https://www.svtplay.se/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": null,
+      "summary": "<p>For almost a year, SVT's crime reporters Karin Fagerlund and Lasse Lampers have followed the investigation into 20-year-old Tove's death in Vetlanda - from Tove's disappearance to the verdict against two young women in the Court of Appeal. In their search for answers, Karin and Lasse meet investigators, prosecutors and lawyers and review the details of the investigation. They also meet neighbors, acquaintances and others involved to get to the bottom of what really happened and how it affected Vetlanda as a community.</p>",
+      "updated": 1699698191,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/72609"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2685163",
+          "name": "Rättegångarna"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.14602539,
+    "show": {
+      "id": 60881,
+      "url": "https://www.tvmaze.com/shows/60881/det-perfekte-fallet",
+      "name": "Det perfekte fallet",
+      "type": "Documentary",
+      "language": "Norwegian",
+      "genres": [],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 10,
+      "premiered": "2022-03-06",
+      "ended": "2022-03-17",
+      "officialSite": "https://tv.nrk.no/serie/det-perfekte-fallet",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 4,
+      "network": null,
+      "webChannel": {
+        "id": 238,
+        "name": "NRK TV",
+        "country": {
+          "name": "Norway",
+          "code": "NO",
+          "timezone": "Europe/Oslo"
+        },
+        "officialSite": null
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 417679,
+        "imdb": null
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/398/997136.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/398/997136.jpg"
+      },
+      "summary": "<p>The dream of flying the farthest in the world almost cost him his life, but Daniel-André refuses to give up. He will become world champion in ski flying at home.</p>",
+      "updated": 1648903457,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/60881"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2290726",
+          "name": "Frykt"
+        }
+      }
+    }
+  }
+]
