@@ -21,14 +21,21 @@ if (form) {
 			const jsonData = await response.json()
 			// assign data asynchronously
 			jsonData.forEach(async (item) => {
+				// create card element
 				const card = document.createElement("article")
 				card.className = "card"
+
+				// create title
 				const h2 = document.createElement("h2")
 				h2.innerText = item["show"]["name"]
+
+				// create link
 				const a = document.createElement("a")
 				a.href = item["show"]["url"]
 				a.innerText = item.show.url
 				a.target = "_blank"
+
+				// create img
 				const img = document.createElement("img")
 				// I love anonymous functions
 				img.src = (() => { return item.show.image?.medium || "https://placehold.co/210x295" })()
