@@ -4,9 +4,7 @@
 // if user selects ok the program prints the answer to html file
 // if user cancels the program prints "Square root not calculated"
 
-//container is declared in 1_5_leap_year
-
-const div_dice = container.querySelector("div[id=div_dice]")
+const div_dice = document.body.querySelector("div[id=div_dice]")
 const dice_amount = div_dice.querySelector("input[name=dice_amount]")
 const eye_value = div_dice.querySelector("input[name=eye_value]")
 const dice_button = div_dice.querySelector("button")
@@ -27,5 +25,5 @@ dice_button.addEventListener('click', function() {
 		}
 	}
 	// print the result to paragraph
-	div_dice.querySelector("p").innerText = `Probability to get sum ${eye_value.value} is ${(hit / rolls) * 100}%`
+	div_dice.querySelector("p").innerText = `Probability to get sum ${eye_value.value} with ${dice_amount.value} dice is ${(hit / rolls) * 100}%`
 })

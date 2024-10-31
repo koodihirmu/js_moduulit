@@ -1,7 +1,5 @@
 'use strict';
 
-const container = document.querySelector(".container")
-
 const form = document.querySelector("form[id=form_leap_year]")
 const year = document.querySelector("input[name=year]")
 const p = form.querySelector("p")
