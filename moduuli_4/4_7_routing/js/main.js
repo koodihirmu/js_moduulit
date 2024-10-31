@@ -9,46 +9,41 @@ const apiAddress = "https://api.digitransit.fi/routing/v1/routers/hsl/index/grap
 const apiAddress_geocoding = "https://api.digitransit.fi/geocoding/v1/search"
 
 const getAPIkey = async () => {
-	try {
-		// make sure to load the api key so that it doesn't show up in git repo
-		const api_key = await fetch("http://127.0.0.1:8080/env.json")
-			.then((response) => { return response.json() })
-		return api_key.api_key
-	} catch (error) {
-		console.log(error)
-		return null
+	// make sure to load the api key so that it doesn't show up in git repo
+	//const api_key = await fetch("http://127.0.0.1:8080/env.json")
+	const api_key = await fetch("http://127.0.0.1:8080/env.json")
+		.then((response) => { return response.json() })
+	if (!api_key.api_key) {
+		document.querySelector("#result").innerText = "ERROR: API key not found"
+		throw new Error("Error: API key not found")
 	}
+	return api_key.api_key
 }
 
 const addressToCoordinates = async (address) => {
-	try {
-		const params = new URLSearchParams({
-			text: address,
-			size: 1
-		})
-		const fetchOptions = {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json',
-				'digitransit-subscription-key': await getAPIkey(),
-			},
-		}
-		const response = await fetch(`${apiAddress_geocoding}?${params.toString()}`, fetchOptions)
-
-		if (!response.ok) {
-			throw new Error(`Error: ${response.status} ${response.statusText}`)
-		}
-
-		const apiData = await response.json()
-		if (!apiData.features.length > 0) {
-			console.log("Error: no results.")
-			return
-		}
-		return { longitude: apiData.features[0].geometry.coordinates[0], latitude: apiData.features[0].geometry.coordinates[1] }
-	} catch (error) {
-		console.log(error)
-		return null
+	const params = new URLSearchParams({
+		text: address,
+		size: 1
+	})
+	const fetchOptions = {
+		method: 'GET',
+		headers: {
+			'Content-Type': 'application/json',
+			'digitransit-subscription-key': await getAPIkey(),
+		},
 	}
+	const response = await fetch(`${apiAddress_geocoding}?${params.toString()}`, fetchOptions)
+
+	if (!response.ok) {
+		throw new Error(`Error: ${response.status} ${response.statusText}`)
+	}
+
+	const apiData = await response.json()
+	if (!apiData.features.length > 0) {
+		console.log("Error: no results.")
+		return
+	}
+	return { longitude: apiData.features[0].geometry.coordinates[0], latitude: apiData.features[0].geometry.coordinates[1] }
 }
 
 const getRoute = async (beginning, destination) => {
@@ -82,24 +77,20 @@ const getRoute = async (beginning, destination) => {
 				}
 			  }
 	}`
-	try {
-		const fetchOptions = {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				'digitransit-subscription-key': await getAPIkey(),
-			},
-			body: JSON.stringify({ query: GQLquery }),
-		}
-		const response = await fetch(apiAddress, fetchOptions)
-		const apiData = await response.json()
-		if (!apiData.data.plan.itineraries.length > 0) {
-			return null
-		}
-		return apiData
-	} catch (error) {
-		console.log(error)
+	const fetchOptions = {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			'digitransit-subscription-key': await getAPIkey(),
+		},
+		body: JSON.stringify({ query: GQLquery }),
 	}
+	const response = await fetch(apiAddress, fetchOptions)
+	const apiData = await response.json()
+	if (!apiData.data.plan.itineraries.length > 0) {
+		return null
+	}
+	return apiData
 }
 
 const form = document.body.querySelector("#search_location")
