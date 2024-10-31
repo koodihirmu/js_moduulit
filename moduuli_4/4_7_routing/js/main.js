@@ -10,6 +10,7 @@ const apiAddress_geocoding = "https://api.digitransit.fi/geocoding/v1/search"
 
 const getAPIkey = async () => {
 	try {
+		// make sure to load the api key so that it doesn't show up in git repo
 		const api_key = await fetch("http://127.0.0.1:8080/env.json")
 			.then((response) => { return response.json() })
 		return api_key.api_key
@@ -38,7 +39,6 @@ const addressToCoordinates = async (address) => {
 			throw new Error(`Error: ${response.status} ${response.statusText}`)
 		}
 
-
 		const apiData = await response.json()
 		if (!apiData.features.length > 0) {
 			console.log("Error: no results.")
@@ -47,7 +47,7 @@ const addressToCoordinates = async (address) => {
 		return { longitude: apiData.features[0].geometry.coordinates[0], latitude: apiData.features[0].geometry.coordinates[1] }
 	} catch (error) {
 		console.log(error)
-		return undefined
+		return null
 	}
 }
 
@@ -62,6 +62,8 @@ const getRoute = async (beginning, destination) => {
 				  duration,
 				  legs {
 					mode
+					startTime
+					endTime
 					from {
 					  lat
 					  lon
@@ -105,6 +107,11 @@ const form = document.body.querySelector("#search_location")
 let layer = []
 let polyline = []
 
+// the api seems to return the time stamp already multiplied 1000
+const unixToTime = (unixTimeStamp) => {
+	const date = new Date(unixTimeStamp)
+	return date.toLocaleTimeString("fi-FI")
+}
 
 // event listener for form
 form.addEventListener('submit', async (evt) => {
@@ -152,8 +159,12 @@ form.addEventListener('submit', async (evt) => {
 				polyline.push(L.polyline(pointObjects).setStyle({ color: 'red' }).addTo(map))
 			})
 
-			document.querySelector("#result").innerText = `Estimated duration for the route: ${(routeRoot.duration / 60).toFixed(0)} minutes`
-
+			// for showing the times
+			const startEndTime = document.querySelector("#result2")
+			startEndTime.innerText = "Departure: " + unixToTime(routeLegs[0].startTime) + " Arrival: " + unixToTime(routeLegs[routeLegs.length - 1].endTime)
+			// estimated duration of the route
+			const estimatedTime = document.querySelector("#result")
+			estimatedTime.innerText = `Estimated duration for the route: ${(routeRoot.duration / 60).toFixed(0)} minutes`
 		}
 	} catch (error) {
 		console.log(error)
