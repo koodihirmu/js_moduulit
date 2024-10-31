@@ -59,29 +59,17 @@ const getRoute = async (beginning, destination) => {
 			)
 			{
 				itineraries{
-				  walkDistance,
 				  duration,
 				  legs {
 					mode
-					startTime
-					endTime
 					from {
 					  lat
 					  lon
-					  name
-					  stop {
-						code
-						name
-					  }
 					},
 					to {
 					  lat
 					  lon
 					  name
-					},
-					agency {
-					  gtfsId
-				  name
 					},
 					distance
 					legGeometry {
@@ -103,7 +91,9 @@ const getRoute = async (beginning, destination) => {
 		}
 		const response = await fetch(apiAddress, fetchOptions)
 		const apiData = await response.json()
-		//console.log(apiData)
+		if (!apiData.data.plan.itineraries.length > 0) {
+			return null
+		}
 		return apiData
 	} catch (error) {
 		console.log(error)
@@ -111,42 +101,59 @@ const getRoute = async (beginning, destination) => {
 }
 
 const form = document.body.querySelector("#search_location")
+
 let layer = []
 let polyline = []
 
 
+// event listener for form
 form.addEventListener('submit', async (evt) => {
 	evt.preventDefault()
-	// remove markers
+	// remove all markers
 	layer.forEach((x) => {
-		console.log(x)
 		x.remove()
 	})
 
+	// remove all polylines
 	polyline.forEach((x) => {
 		x.remove()
 	})
 
 	try {
 		const query = form.querySelector("input[name=location]")
+		// check if we have a value in the input
 		if (!query.value) {
 			console.log("Error: no search term found")
 			return
 		}
+		// get coordinates fromt he input
 		const address = await addressToCoordinates(query.value)
+		// check if address is valid
 		if (address) {
-			map.setView([address.latitude, address.longitude], 13)
+			// set marker for the address
 			layer = [L.marker([address.latitude, address.longitude]).addTo(map)]
+			// get the default destination
 			const destination = await addressToCoordinates("Karaportti 2")
+			// zoom out to fit the route
+			map.fitBounds([[address.latitude, address.longitude], [destination.latitude, destination.longitude]])
+			// push a marker in the array
 			layer.push(new L.marker([destination.latitude, destination.longitude]).addTo(map))
+			// get route
 			const route = await getRoute(address, destination)
-			const encodedRoute = route.data.plan.itineraries[0].legs
-			encodedRoute.forEach((leg) => {
+			if (!route) {
+				console.log("Error: no routes found")
+				return
+			}
+			// decode route points
+			const routeRoot = route.data.plan.itineraries[0]
+			const routeLegs = routeRoot.legs
+			routeLegs.forEach((leg) => {
 				const pointObjects = L.Polyline.fromEncoded(leg.legGeometry.points).getLatLngs()
 				polyline.push(L.polyline(pointObjects).setStyle({ color: 'red' }).addTo(map))
 			})
-			map.fitBounds([[address.latitude, address.longitude], [destination.latitude, destination.longitude]])
-			//console.log(route.data.plan.itineraries[0].legs.forEach((leg) => console.log(leg.legGeometry["points"])))
+
+			document.querySelector("#result").innerText = `Estimated duration for the route: ${(routeRoot.duration / 60).toFixed(0)} minutes`
+
 		}
 	} catch (error) {
 		console.log(error)
