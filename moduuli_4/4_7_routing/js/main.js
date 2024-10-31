@@ -11,14 +11,19 @@ const apiAddress_geocoding = "https://api.digitransit.fi/geocoding/v1/search"
 const getAPIkey = async () => {
 	// make sure to load the api key so that it doesn't show up in git repo
 	//const api_key = await fetch("http://127.0.0.1:8080/env.json")
-	const api_key = await fetch("http://127.0.0.1:8080/env.json")
-		.then((response) => { return response.json() })
-	if (!api_key.api_key) {
-		document.querySelector("#result").innerText = "ERROR: API key not found"
-		throw new Error("Error: API key not found")
+	const response = await fetch("http://127.0.0.1:8080/env.json")
+	//.then((response) => { return response.json() })
+	if (response.ok) {
+		const api_key = await response.json()
+		if (!api_key.api_key) {
+			document.querySelector("#result").innerText = "ERROR: API key not found"
+			throw new Error("Error: API key not found")
+		}
+		return api_key.api_key
 	}
-	return api_key.api_key
+	throw new Error("Error: API key not found")
 }
+
 
 const addressToCoordinates = async (address) => {
 	const params = new URLSearchParams({
