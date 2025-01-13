@@ -43,6 +43,7 @@ const addressToCoordinates = async (address) => {
 		throw new Error(`Error: ${response.status} ${response.statusText}`)
 	}
 
+
 	const apiData = await response.json()
 	if (!apiData.features.length > 0) {
 		console.log("Error: no results.")
@@ -62,7 +63,7 @@ const getRoute = async (beginning, destination) => {
 				  duration,
 				  legs {
 					mode
-					startTime
+					startTime
 					endTime
 					from {
 					  lat
@@ -166,4 +167,3 @@ form.addEventListener('submit', async (evt) => {
 		console.log(error)
 	}
 })
-
